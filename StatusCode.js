@@ -1,3 +1,6 @@
+/** This Status code file is used to keep all type of HTTP Status Codes in a single place.
+      and this helps us in asserting the response status codes **/
+
 exports.StatusCode = {
     OK: 200,
     CREATED: 201,
