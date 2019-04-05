@@ -17,7 +17,7 @@ describe("Login Api", () => {
         res.status.should.equal(statusCode.OK);
         console.log('Validating the Response Status Message');
         res.body.status.should.equal(statusMessage.SUCCESS);
-        console.log('Get the Generated Status code and storing the getauthToken variable');
+        console.log('Get the Generated Auth Token and store it in the getauthToken variable');
         getauthToken = res.body.data.user.token.authToken;
         console.log("You are just printing the generated Auth Token:", getauthToken);
         schemaValidation.ValidateJsonSchema(loginSchema, res.body);

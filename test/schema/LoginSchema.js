@@ -1,4 +1,4 @@
-/** This ia a example login schema for the login having userid, isverfied status, authtoken and refreshtoken
+/** This ia a example login schema for the login response having userid, isverfied status, authtoken and refreshtoken
         here we are validating the id type as int, isverified status as bool auth and ref token as string **/
 
 exports.loginSchema =
