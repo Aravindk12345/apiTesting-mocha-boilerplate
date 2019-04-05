@@ -12,7 +12,7 @@ let getUserId = "";
         this request body can be changed as per your project api **/
 
 exports.createUser = async function (ID, id, name, token) {
-    let requestBody = reqBody.industryBody(id, name);
+    let requestBody = reqBody.userBody(id, name);
     URL = baseActions.getBaseURL();
     console.log(URL + baseURLMapper.USER, requestBody);
     let res = await baseActions.sendPOSTRequest1(URL, baseURLMapper.USER + ID, requestBody, token);
@@ -40,7 +40,7 @@ exports.getUserList = async function (ID, token) {
 /** This updateUser will help us in updating the user using the user-id **/
 
 exports.updateUser = async function (ID, id, name, token) {
-    let requestBody = reqBody.industryBody(id, name);
+    let requestBody = reqBody.userBody(id, name);
     URL = baseActions.getBaseURL();
     let res = await baseActions.sendPUTRequest(URL, baseURLMapper.USER + getUserId + ID, requestBody, token);
     console.log(res.body);
