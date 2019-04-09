@@ -26,5 +26,17 @@
 
   - Clone the github project
   - Navigate to project directory
-  - Install npm
+  - npm Install
   
+##  Code Review checklist
+
+  - You can find the code review checklist in the doc folder that is good enough to follow.
+  - You are always welcome to add are modify the code checklist.
+  
+##  Contributing
+
+  - Fork it
+  - Create your feature branch (git checkout -b feature/fooBar)
+  - Commit your changes (git commit -am 'Add some fooBar')
+  - Push to the branch (git push origin feature/fooBar)
+  - Create a new Pull Request
