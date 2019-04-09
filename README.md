@@ -29,7 +29,7 @@
   
 ## Code Review checklist
 
-  - You can find the code review checklist in the doc folder that is good enough to follow.
+  - You can find the code review checklist in the doc folder [Checklist](./doc/Code%20Review%20Checklist.docx) that is good enough to follow.
   - You are always welcome to add are modify the code checklist.
   
 ## Contributing
@@ -46,4 +46,4 @@
 
 # License
 
-This project is licensed under the Apache License 2.0 - see the LICENSE.md file for details
+This project is licensed under the Apache License 2.0 - see the [License](LICENSE) file for details
