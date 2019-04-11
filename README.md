@@ -5,7 +5,7 @@
     - Mocha as test runner.
     - should.js as assertion library.
     - supertest to make HTTP requests.
-    - json-server to create a Rest-Api.
+    - json-server to create a RESTful-Api.
     - Faker.js to create a user data.
     - ajv to make schema validations.
     - mochawesome as Reporter.

@@ -3,7 +3,7 @@ var faker = require('faker');
 /** generateUsers function is user to create a list of users with different fields like first_name, last_name, email and id.
          We are using faker.js npm library to generate a relevant user data **/
 
-function generateUsers () {
+function generateUsers() {
     var users = [];
 
     for (var id = 0; id < 10; id++) {
@@ -19,7 +19,7 @@ function generateUsers () {
         });
     }
 
-    return { "users": users }
+    return {"users": users}
 }
 
 module.exports = generateUsers;
