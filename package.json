@@ -5,12 +5,14 @@
   "scripts": {
     "test.api": "mocha '' --timeout 100000 --reporter mochawesome",
     "report": "marge --inline=true mochawesome-report/mochawesome.json",
+    "apiserver": "json-server --watch 'test/testData/userdata.js'"
   },
   "author": "Aravind Reddy <aravind.1si13cs043@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "ajv": "^6.10.0",
-    "json-server": "^0.11.2",
+    "faker": "^4.1.0",
+    "json-server": "^0.12.2",
     "mocha": "^3.4.2",
     "mochawesome": "^3.0.3",
     "mochawesome-report-generator": "^3.1.3",
