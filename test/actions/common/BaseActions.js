@@ -4,20 +4,22 @@ const supertest = require('supertest');
 const headers = require('../../testData/DefaultHeaders').myHeaders;
 
 
-/** This getBaseUrl will help you in dynamically assigning the baseurl to the ENVIRONMENT variable
+/** This getBaseUrl will help you in dynamically assigning the baseurl and baseurl extension to the ENVIRONMENT and ENVEXT variable
         for more information about env var read the Readme file **/
 
 exports.getBaseURL = () => {
     let baseURL = "";
+    let baseURLExt = "";
     try {
         baseURL = process.env.ENVIRONMENT;
+        baseURLExt = process.env.ENVEXT;
         console.log("BaseURL : " + baseURL);
     } catch (err) {
         throw new Error("BASE URL is not Defined, Please Specify the BASE URL : " + process.env.ENVIRONMENT);
     }
     let BaseURLSpecifications = {
-        BASE_URL: baseURL,
-        BASE_URL_EXTENSION: ""     // Here you need to give baseUrl_ext(Ex:'api/v1/')
+        BASE_URL: baseURL,                 // baseUrl(Ex:'https://27.158.126.894/')
+        BASE_URL_EXTENSION: baseURLExt,    // baseUrl_ext(Ex:'api/v1/')
     };
     return BaseURLSpecifications.BASE_URL + BaseURLSpecifications.BASE_URL_EXTENSION;
 };
