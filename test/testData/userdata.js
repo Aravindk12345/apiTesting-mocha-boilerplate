@@ -6,7 +6,7 @@ var faker = require('faker');
 function generateUsers() {
     var users = [];
 
-    for (var id = 0; id < 10; id++) {
+    for (var id = 0; id < 2; id++) {
         var firstName = faker.name.firstName();
         var lastName = faker.name.lastName();
         var email = faker.internet.email();

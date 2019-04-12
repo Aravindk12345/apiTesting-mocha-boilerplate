@@ -10,11 +10,10 @@ exports.getRequestBody = (email, password) => {
     }
 };
 
-exports.userBody = (id, name) => {
+exports.userBody = (firstname, lastname, email) => {
     return {
-        "user": {
-            "userId": id,
-            "name": name
-        }
+        "first_name": firstname,
+        "last_name": lastname,
+        "email": email
     }
 };

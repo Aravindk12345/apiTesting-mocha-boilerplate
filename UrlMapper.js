@@ -2,5 +2,5 @@
 
 exports.UrlMapper = {
     LOGIN: "signin/",
-    USER: "user/"
+    USER: "users/"
 };

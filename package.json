@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "apiTesting boilerplate with supertest and mocha",
   "scripts": {
-    "test.api": "mocha '' --timeout 100000 --reporter mochawesome",
+    "test.api": "mocha 'test/specs/User/CreateUser.js' --timeout 100000 --reporter mochawesome",
     "report": "marge --inline=true mochawesome-report/mochawesome.json",
     "apiserver": "json-server --watch 'test/testData/userdata.js'"
   },
