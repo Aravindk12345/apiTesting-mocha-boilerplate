@@ -32,7 +32,6 @@ describe("Performing CRUD Operations on User", () => {
             res.status.should.equal(statusCode.CREATED);
         });
 
-        //Verify the details of created user
         after('Verify the details of created user', async function () {
             let res = await User.getUserList(getUserId, getauthToken);
             console.log('Getting the created user data');
