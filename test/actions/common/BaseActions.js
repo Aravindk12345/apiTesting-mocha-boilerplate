@@ -1,6 +1,7 @@
 'use strict';
 
 const supertest = require('supertest');
+require('dotenv').config();
 const headers = require('../../testData/DefaultHeaders').myHeaders;
 
 

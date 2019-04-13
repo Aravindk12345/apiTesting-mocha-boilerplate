@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "apiTesting boilerplate with supertest and mocha",
   "scripts": {
-    "test.api": "mocha 'test/specs/User/CreateUser.js' --timeout 100000 --reporter mochawesome",
+    "test.api": "mocha 'test/specs/User/User.js' --timeout 100000 --reporter mochawesome",
     "report": "marge --inline=true mochawesome-report/mochawesome.json",
     "apiserver": "json-server --watch 'test/testData/userdata.js'"
   },
@@ -11,6 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "ajv": "^6.10.0",
+    "dotenv": "^7.0.0",
     "faker": "^4.1.0",
     "json-server": "^0.12.2",
     "mocha": "^3.4.2",

@@ -28,6 +28,13 @@
   - Clone the github project
   - Navigate to project directory
   - npm Install
+
+## How to Run (local)
+
+  - Set the ENVIRONMENT variable i.e in cmd export ENVIRONMENT="http://localhost:"
+  - Set the ENVEXT variable i.e in cmd export ENVEXT="3000/"
+  - In new cmd you need to run: npm run apiserver
+  - Now Run your scripts: npm run test.api
   
 ## Code Review checklist
 
@@ -45,6 +52,7 @@
 # Authors
 
   - **Aravind Reddy K** 
+  - If you like it Star ⭐ It.
 
 # License
 
